@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Logo from '../../../logo.svg'
+import './style.css';
 
-
-const imageLogo = ({clasedelLogo}) => (
-  <img className={clasedelLogo} src={Logo} alt="logo"/>
+const imageLogo = ({clasedelLogo, imagenDelLogo}) => (
+  <img className={clasedelLogo} src={imagenDelLogo} alt="logo"/>
 );
 
 imageLogo.propType = {
   clasedelLogo: PropTypes.string.isRequired
 }
-
 
 export default imageLogo;
